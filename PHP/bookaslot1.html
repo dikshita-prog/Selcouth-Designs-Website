@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book A Slot</title>
+<link rel="stylesheet" type="text/css" href="..\CSS\login.css">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Monoton&family=Train+One&family=Yatra+One&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<h1 style=" font-family: 'Train One', cursive; font-size:55px; word-spacing: 5px;color: white;"><center>SELCOUTH DESIGNS<img src="..\images\logo500b.png"></center></h1>
+<div class="box">
+<div class="display" style="font-family: 'Cormorant Garamond', serif;"><i>Hi, Welcome to SELCOUTH DESIGNS. We believe comfort and patience are the key to build a lovely and beautiful place. Book a slot as per your convenience and design your place as per your wish, your comfort. We promise to stay by you and guide you till the end with utmost patience till you are satisfied and in love with your place.</i></div>
+</div>
+<br>
+<center><button class="main-btn"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">BOOK A SLOT</button></center>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" method="post" action="test.php">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+    <div class="container">
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter your Name" name="uname" required>
+
+      <label for="email"><b>Email id</b></label>
+      <input type="text" placeholder="Enter email address" name="email" required>
+	  
+	  <label for="phno"><b>Phone Number</b></label>
+      <input type="text" placeholder="Enter Phone Number" name="phno" required>
+	  
+	  <label for="city"><b>City</b></label>
+      <input type="text" placeholder="Enter city" name="city" required>
+	  
+	   <label for="purpose"><b>Purpose</b></label>
+      <input type="text" rows="10" cols="10" placeholder="Room/Home Decor or Consult or Other" name="purpose" required>
+	  
+	  <label for="time"><b>Preferred Time</b></label>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="time" name="time" required>
+        
+      <button type="submit" name='submit'>Book a Slot</button>
+	  
+        </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
